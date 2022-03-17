@@ -1,9 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <h2>This is a sample Widget built using Zoho Extension toolkit.</h2>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./widget.css">
+</head>
+
+<body>
+  
+
+  <div class="App">
+
+    <h1>Experiment Dashboard</h1>
+    <div id="dashboard-container">
+
+      <div class="Card-container">
+
+
+        <div class="status-card cmp" id="Completed">
+          <h4>Completed</h4>
+          
+        </div>
+        <div class="status-card inpgr">
+          <h4>In progress</h4>
+        
+        </div>
+        <div class="status-card indev">
+          <h4>In Development</h4>
+         
+        </div>
+        <div class="status-card onhld">
+          <h4>On Hold</h4>
+          
+        </div>
+        <div class="status-card ntstrd">
+          <h4>Completed</h4>
+          
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+
 </html>
