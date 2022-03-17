@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+ 
   <link rel="stylesheet" href="./widget.css">
 </head>
 
@@ -17,33 +18,42 @@
       <div class="Card-container">
 
 
-        <div class="status-card cmp" id="Completed">
+        <div class="status-card cmp" id="cmp">
           <h4>Completed</h4>
           
         </div>
-        <div class="status-card inpgr">
+        <div class="status-card inpgr" id="inpgr">
           <h4>In progress</h4>
         
         </div>
-        <div class="status-card indev">
+        <div class="status-card indev" id="indev">
           <h4>In Development</h4>
          
         </div>
-        <div class="status-card onhld">
+        <div class="status-card onhld" id="onhld">
           <h4>On Hold</h4>
           
         </div>
-        <div class="status-card ntstrd">
+        <div class="status-card ntstrd" id="ntstrd">
           <h4>Completed</h4>
           
         </div>
 
+      </div>
+      <div class="pie-container">
+
+        <h3>User Based</h3>
+        
+        <canvas id="myChart"></canvas>
+    
       </div>
 
 
     </div>
   </div>
   <script type="text/javascript" src="https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
   <script type="text/javascript" src="./app.js"></script>
 </body>
 

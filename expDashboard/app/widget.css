@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 
-h1{
+h1,h3{
     font-family: 'Quicksand', sans-serif;
 }
 .App{
     width: 70%; 
     margin: auto;
+}
+
+.pie-container{
+    width:50%;
 }
 
 .Card-container{
@@ -21,6 +25,8 @@ h1{
     font-family: 'Quicksand', sans-serif;
     color:white ;
     border-radius: .5rem;
+    padding-left: 20px;
+    line-height: 1rem;
 }
 
 .cmp{
