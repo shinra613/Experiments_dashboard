@@ -337,30 +337,30 @@ testData = [
   }
 ]
 
-let testData0 = ZOHO.CREATOR.init();
+// let testData0 = ZOHO.CREATOR.init();
 
-let testData1 = testData0.then(function () {
+// let testData1 = testData0.then(function () {
 
-  var config = {
-    appName: "Sample1-new",
-    reportName: "All_Experiments"
+//   var config = {
+//     appName: "Sample1-new",
+//     reportName: "All_Experiments"
 
-  }
+//   }
 
-  ZOHO.CREATOR.API.getAllRecords(config);
-});
+//   ZOHO.CREATOR.API.getAllRecords(config);
+// });
   
- let finalResponse = await testData1.then(function (response) {
+//  let finalResponse = await testData1.then(function (response) {
 
-  return response.data;
+//   return response.data;
 
-});
-
-
+// });
 
 
 
-console.log(finalResponse);
+
+
+// console.log(finalResponse);
 
 let userCountArr = [];
 let users = ['Adil', 'Anup', 'Nikhil', 'Mayuri', 'Udhay', 'Other'];
