@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
- 
+
   <link rel="stylesheet" href="./widget.css">
 </head>
 
 <body>
-  
+
 
   <div class="App">
 
@@ -17,35 +17,74 @@
 
       <div class="Card-container">
 
-
+       <a href="https://creatorapp.zoho.com/anup_creator/sample1-new/">
         <div class="status-card cmp" id="cmp">
           <h4>Completed</h4>
-          
+
         </div>
+      </a>
         <div class="status-card inpgr" id="inpgr">
           <h4>In progress</h4>
-        
+
         </div>
         <div class="status-card indev" id="indev">
           <h4>In Development</h4>
-         
+
         </div>
         <div class="status-card onhld" id="onhld">
           <h4>On Hold</h4>
-          
+
         </div>
         <div class="status-card ntstrd" id="ntstrd">
-          <h4>Completed</h4>
-          
+          <h4>Not Started</h4>
+
         </div>
 
       </div>
-      <div class="pie-container">
+      <div class="chart-container">
 
-        <h3>User Based</h3>
-        
-        <canvas id="myChart"></canvas>
-    
+        <div class="pie-container">
+
+          <h3>User Based</h3>
+
+          <canvas id="ChartTwo"></canvas>
+
+        </div>
+        <div class="bar-container">
+
+          <h3>Focus Area Based</h3>
+
+          <canvas id="ChartOne"></canvas>
+
+        </div>
+
+      </div>
+      <div class="incomp-container">
+
+        <h3>Pending Work</h3>
+        <div class="filer-container">
+          <label for="User">Filter By User:</label>
+          <select id="User" name="User" onchange="selectChanged(this);">
+            <option value="All Users">All Users</option>
+            
+          </select>
+        </div>
+
+        <table id="pending-work">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Experiment Type</th>
+              <th>Assigned To</th>
+            </tr>
+          </thead>
+          
+          <tbody id="current-body">
+
+          </tbody>
+        </table>
+
       </div>
 
 

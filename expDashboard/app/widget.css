@@ -1,16 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+body{
+
+}
 
 h1,h3{
     font-family: 'Quicksand', sans-serif;
 }
+
+h3{
+    margin-bottom: 60px;
+}
 .App{
-    width: 70%; 
+    width: 95%; 
     margin: auto;
+}
+
+.chart-container{
+   display: flex;
 }
 
 .pie-container{
     width:50%;
+}
+
+
+.bar-container{
+    width:50%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+ 
+   
+}
+
+th{
+    font-family: 'Quicksand', sans-serif;
+    color:white ;
+    background-color: #1A1A40;
+    border: none;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+td,th{
+    width: 25%;
+    text-align: center;
+    padding: 10px 0 ;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.filer-container{
+    font-family: 'Quicksand', sans-serif;
+    text-align: end;
+    margin-bottom: 10px;
+}
+
+select{
+    outline: none;
 }
 
 .Card-container{
@@ -42,9 +94,9 @@ h1,h3{
 }
 
 .onhld{
-    background-color: #FFA1C9;
+    background-color: #F94892;
 }
 
 .ntstrd{
-    background-color: #F94892;
+    background-color: #FFA1C9;
 }
