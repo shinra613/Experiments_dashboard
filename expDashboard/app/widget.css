@@ -110,3 +110,67 @@ select{
 .ntstrd{
     background-color:#F94892 ;
 }
+
+#testmodel{
+    width: 50%;
+    position: fixed;
+    transition: 200ms ease-in-out;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: white;
+    z-index:10;
+}
+
+#testmodel.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+#testmodeltwo{
+    width: 20%;
+    position: fixed;
+    transition: 200ms ease-in-out;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: white;
+    z-index:10;
+    border-radius: 2rem;
+}
+
+#testmodeltwo.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events:none;
+}
+
+#overlay.active{
+    pointer-events:all;
+    opacity: 1;
+}
+
+#expcard-container{
+    padding: 10px;
+    line-height: 1.5rem;
+    border: 5px solid black;
+    border-radius: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.titlespan{
+    font-weight: 900;
+}
+
+.conspan{
+    font-style: italic;
+    color:#7A0BC0;
+}

@@ -22,29 +22,29 @@
       <div class="Card-container">
 
        
-        <div class="status-card cmp" id="cmp" >
+        <div class="status-card cmp" id="cmp" value="blip" onclick="statusSelection('Completed');">
           
           <h4>Completed</h4>
           <a href="https://creatorapp.zoho.com/anup_creator/sample1-new/report-embed/All_Experiments?Status=Completed"></a>
         
         </div>
       
-        <div class="status-card inpgr" id="inpgr">
-          <h4>In progress</h4>
+        <div class="status-card inpgr" id="inpgr"onclick="statusSelection('In Progress');">
+          <h4>In Progress</h4>
           <a href="https://creatorapp.zoho.com/anup_creator/sample1-new/report-embed/All_Experiments?Status=In%20progress"></a>
 
         </div>
-        <div class="status-card indev" id="indev">
+        <div class="status-card indev" id="indev"onclick="statusSelection('In Development');">
           <h4>In Development</h4>
           <a href="https://creatorapp.zoho.com/anup_creator/sample1-new/report-embed/All_Experiments?Status=In%20Development"></a>
 
         </div>
-        <div class="status-card onhld" id="onhld">
+        <div class="status-card onhld" id="onhld"onclick="statusSelection('On Hold');">
           <h4>On Hold</h4>
           <a href="https://creatorapp.zoho.com/anup_creator/sample1-new/report-embed/All_Experiments?Status=On%20Hold"></a>
 
         </div>
-        <div class="status-card ntstrd" id="ntstrd">
+        <div class="status-card ntstrd" id="ntstrd"onclick="statusSelection('Not Started');">
           <h4>Not Started</h4>
           <a href="https://creatorapp.zoho.com/anup_creator/sample1-new/report-embed/All_Experiments?Status=Not%20Started"></a>
 
@@ -99,6 +99,34 @@
 
 
     </div>
+
+    <div id="testmodel">
+
+      <table id="status-work">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Experiment Type</th>
+            <th>Assigned To</th>
+          </tr>
+        </thead>
+        
+        <tbody id="current-body">
+
+        </tbody>
+      </table>
+
+    </div>
+
+    <div id="testmodeltwo">
+
+      <div id="expcard-container">
+
+      </div>
+
+    </div>
+
+    <div id="overlay" onclick="closeStatusList();"></div>
   </div>
   <script type="text/javascript" src="https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
