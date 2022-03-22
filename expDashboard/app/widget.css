@@ -84,6 +84,11 @@ select{
 .status-card:active {
     position:relative;
     top:10px; 
+    cursor: -webkit-grabbing; cursor: grabbing;
+}
+
+.status-card:hover{
+    cursor:pointer;
 }
 
 .cmp{
