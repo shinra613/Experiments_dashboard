@@ -68,7 +68,31 @@ const bootstrap = (testData) => {
     incompHandler(theSelected.value,testData);
   };
 
+ 
+
 }
+
+$(".cmp").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+$(".inpgr").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+$(".indev").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+$(".onhld").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+$(".ntstrd").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+
 
 const StatusCountHandler = (status, statusID,testData) => {
   let counter = 0;
@@ -292,6 +316,8 @@ const incompHandler = (user,testData) => {
   );
 }
   
+
+
 
 
 

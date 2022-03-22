@@ -81,6 +81,11 @@ select{
     line-height: 1rem;
 }
 
+.status-card:active {
+    position:relative;
+    top:10px; 
+}
+
 .cmp{
     background-color: #1A1A40;
 }
@@ -94,9 +99,9 @@ select{
 }
 
 .onhld{
-    background-color: #F94892;
+    background-color: #FFA1C9;
 }
 
 .ntstrd{
-    background-color: #FFA1C9;
+    background-color:#F94892 ;
 }
